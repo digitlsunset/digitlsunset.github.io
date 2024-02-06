@@ -1,11 +1,10 @@
 let weather = {
     fetchWeather: function() {
-        let config = require('../config.json');
-        const { apiKey } = config;
-        fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.66&lon=-86.15&exclude=hourly,daily&units=imperial&appid=" + this.apiKey)
+        const apiKey = Config.apiKey;
+        fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.66&lon=-86.15&exclude=hourly,daily&units=imperial&appid=" + apiKey)
             .then((response) => response.json())
             .then((data) => this.displayMSH(data));
-        fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.07&lon=-85.13&exclude=hourly,daily&units=imperial&appid=" + this.apiKey)
+        fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.07&lon=-85.13&exclude=hourly,daily&units=imperial&appid=" + apiKey)
             .then((response) => response.json())
             .then((data) => this.displayFW(data));
     },
