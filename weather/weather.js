@@ -1,6 +1,7 @@
 let weather = {
-    "apiKey": "3f4081c0952edb479d0eb948c5cf45b2",
     fetchWeather: function() {
+        let config = require('../config.json');
+        const { apiKey } = config;
         fetch("https://api.openweathermap.org/data/2.5/weather?lat=41.66&lon=-86.15&exclude=hourly,daily&units=imperial&appid=" + this.apiKey)
             .then((response) => response.json())
             .then((data) => this.displayMSH(data));
