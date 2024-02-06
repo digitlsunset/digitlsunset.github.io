@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    height: 10vh;
+}
+
+.title {
+    font-size: 4vh;
+    font-weight: bolder;
+    color: #7011d6;
+}
+
+.sub-title {
+    font-size: 2vh;
+    font-weight: bold;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Oswald, sans-serif;
+    background-position: center;
+    background-size: contain;
+    background-color: gray;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #7011d6;
+    color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    align-content: center;
+    height: 6vh;
+}
+
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5vh 1vh;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.menu-end {
+    right: auto;
+    float: right;
+}
+
+.body-content {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer {
+
+}
